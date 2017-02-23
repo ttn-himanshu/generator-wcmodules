@@ -13,7 +13,7 @@ module.exports = Generator.extend({
         var prompts = [{
             type: 'input',
             name: 'name',
-            message: 'Your project name',
+            message: 'Your project name(needed for package/bower.json)',
             default: this.appname
         }, {
             type: 'input',
@@ -62,7 +62,7 @@ module.exports = Generator.extend({
         this.fs.copyTpl(
             this.templatePath('_karma.conf.js'),
             this.destinationPath('karma.conf.js'), {
-                name: this.props.name
+                ngname: this.props.ngname
             }
         );
     },
@@ -97,22 +97,22 @@ module.exports = Generator.extend({
         );
 
         this.fs.copyTpl(
-            this.templatePath('_test/_directives/_testDirective.js'),
-            this.destinationPath('src/scripts/directives/testDirective.js'), {
+            this.templatePath('_test/_directive/_testDirective.js'),
+            this.destinationPath('test/directive/testDirective.js'), {
                 ngname: this.props.ngname
             }
         );
 
         this.fs.copyTpl(
             this.templatePath('_test/_services/_testService.js'),
-            this.destinationPath('src/scripts/services/testService.js'), {
+            this.destinationPath('test/services/testService.js'), {
                 ngname: this.props.ngname
             }
         );
 
         this.fs.copyTpl(
             this.templatePath('_test/_factory/_testFactory.js'),
-            this.destinationPath('src/scripts/factory/testFactory.js'), {
+            this.destinationPath('test/factory/testFactory.js'), {
                 ngname: this.props.ngname
             }
         );

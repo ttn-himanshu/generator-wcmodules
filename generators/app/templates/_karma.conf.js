@@ -36,7 +36,7 @@ module.exports = function(config) {
 
         ngHtml2JsPreprocessor: {
             stripPrefix: 'src/',
-            moduleName: "<%= name %>.templates"
+            moduleName: "<%= ngname %>.templates"
         },
 
         // test results reporter to use
