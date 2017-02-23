@@ -96,6 +96,27 @@ module.exports = Generator.extend({
             }
         );
 
+        this.fs.copyTpl(
+            this.templatePath('_test/_directives/_testDirective.js'),
+            this.destinationPath('src/scripts/directives/testDirective.js'), {
+                ngname: this.props.ngname
+            }
+        );
+
+        this.fs.copyTpl(
+            this.templatePath('_test/_services/_testService.js'),
+            this.destinationPath('src/scripts/services/testService.js'), {
+                ngname: this.props.ngname
+            }
+        );
+
+        this.fs.copyTpl(
+            this.templatePath('_test/_factory/_testFactory.js'),
+            this.destinationPath('src/scripts/factory/testFactory.js'), {
+                ngname: this.props.ngname
+            }
+        );
+
         this.fs.copy(
             this.templatePath('_public/_views/_directive/_testDirectiveTemplate.html'),
             this.destinationPath('src/views/directive/testDirectiveTemplate.html')
