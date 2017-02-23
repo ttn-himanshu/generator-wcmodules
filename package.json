@@ -2,7 +2,7 @@
   "name": "generator-wcmodules",
   "version": "0.2.0",
   "description": "Yeoman generator for creating standalone angular js modules",
-  "homepage": "https://github.com/ttn-himanshu",
+  "homepage": "https://github.com/ttn-himanshu/generator-wcmodules",
   "author": {
     "name": "himanshu adhikari",
     "email": "himanshu.adhikari@tothenew.com",
