@@ -6,7 +6,7 @@
         ""
     ],
     "description": "",
-    "main": "",
+    "main": "dist/<%= name %>",
     "license": "MIT",
     "ignore": [
         "**/.*",
