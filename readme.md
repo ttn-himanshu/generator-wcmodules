@@ -1,4 +1,4 @@
-# generator-wcmodules [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+# generator-wcmodules [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]
 > Yeoman generator for creating standalone angular js modules
 
 ## Installation
